@@ -1380,7 +1380,8 @@ input[type="checkbox"]:checked ~ .header-top_nav__menu {
     }
 
     .footer-bottom p:nth-child(4):after {
-        display: none;
+        content: "";
+        margin-right: 249px;
     }
 }
 
@@ -1552,7 +1553,8 @@ input[type="checkbox"]:checked ~ .header-top_nav__menu {
     }
 
     .footer-bottom p:nth-child(4):after {
-        display: none;
+        content: "";
+        margin-right: 100px;
     }
 
     .footer-bottom p {
