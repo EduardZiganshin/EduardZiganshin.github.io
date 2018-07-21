@@ -1551,6 +1551,9 @@ input[type="checkbox"]:checked ~ .header-top_nav__menu {
         /*height: 100%;*/
     }
 
+    .footer-bottom p:nth-child(4):after {
+        display: none;
+    }
 
     .footer-bottom p {
         /* Style for "Copyright" */
