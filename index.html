@@ -1,13 +1,12 @@
-<!DOCTYPE html>
+
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Waxom portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 <body>
@@ -113,71 +112,47 @@
                     </button>
                 </form>
             </div>
-            <div class="header-slider">
-                <div class="header-slider__slide">
-                    <img src="img/header-bg.png" alt="Картинка слайда" class="header-slider__img">
-                    <h2>Unique and Modern Design</h2>
-                    <h1>Portfolio PSD Template</h1>
-                    <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(img/header-bg.png);">
+                        <h2>Unique and Modern Design</h2>
+                        <h1>Portfolio PSD Template</h1>
+                        <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim
                         placerat facer possim assum.
-                    </p>
-                    <button>Get started</button>
-                </div>
-                <div class="header-slider__slide">
-                    <img src="img/deer.jpg" alt="Картинка слайда" class="header-slider__img">
-                    <h2>Unique and Modern Design</h2>
-                    <h1>Portfolio PSD Template</h1>
-                    <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim
-                        placerat facer possim assum.
-                    </p>
-                    <div class="header-slider__text">
-
+                        </p>
+                        <button>Get started</button>
                     </div>
-                    <button>Get started</button>
-                </div>
-                <div class="header-slider__slide">
-                    <img src="img/water.jpg" alt="Картинка слайда" class="header-slider__img">
-                    <h2>Unique and Modern Design</h2>
-                    <h1>Portfolio PSD Template</h1>
-                    <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim
-                        placerat facer possim assum.
-                    </p>
-                    <div class="header-slider__text">
-
+                    <div class="swiper-slide" style="background-image: url(img/deer.jpg);">
+                        <h2>Unique and Modern Design</h2>
+                        <h1>Portfolio PSD Template</h1>
+                        <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim
+                            placerat facer possim assum.
+                        </p>
+                        <button>Get started</button>
                     </div>
-                    <button>Get started</button>
-                </div>
-                <div class="header-slider__slide">
-                    <img src="img/rocks_3.jpg" alt="Картинка слайда" class="header-slider__img">
-                    <h2>Unique and Modern Design</h2>
-                    <h1>Portfolio PSD Template</h1>
-                    <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim
-                        placerat facer possim assum.
-                    </p>
-                    <div class="header-slider__text">
-
+                    <div class="swiper-slide" style="background-image:url(img/water.jpg);">
+                        <h2>Unique and Modern Design</h2>
+                        <h1>Portfolio PSD Template</h1>
+                        <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim
+                            placerat facer possim assum.
+                        </p>
+                        <button>Get started</button>
                     </div>
-                    <button>Get started</button>
+                    <div class="swiper-slide" style="background-image: url(img/rocks_3.jpg);">
+                        <h2>Unique and Modern Design</h2>
+                        <h1>Portfolio PSD Template</h1>
+                        <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim
+                            placerat facer possim assum.
+                        </p>
+                        <button>Get started</button>
+                    </div>
                 </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
-        <!--<section class="header-slider">-->
-                <!--<a class="header-slider_arrow" href="#"></a>-->
-                <!--<div class="header-title">-->
-                    <!--<h2>Unique and Modern Design</h2>-->
-                    <!--<h1>Portfolio PSD Template</h1>-->
-                    <!--<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id-->
-                        <!--quod mazim placerat facer possim assum.</p>-->
-                    <!--<button>Get started</button>-->
-                <!--</div>-->
-                <!--<a class="header-slider_arrow" href="#"></a>-->
-            <!--</section>-->
-            <!--<form class="header-slider_radio" action="#">-->
-                <!--<input type="radio" name="1">-->
-                <!--<input type="radio" name="2">-->
-                <!--<input type="radio" name="3">-->
-                <!--<input type="radio" name="4">-->
-                <!--<input type="radio" name="5">-->
-            <!--</form>-->
         </header>
         <main class="main">
             <section class="services">
@@ -357,17 +332,19 @@
                 <span>04:36</span>
             </div>
             <section class="mobile-devices">
-                <h2>Excellent for Mobile Devices.</h2>
-                <p>Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-                    ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me
-                    lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum
-                    clari, fiant sollemnes in futurum.</p>
-                <ul>
-                    <li>Nam liber tempor cum soluta nobis eleifend option;</li>
-                    <li>Option congue nihil imperdiet doming id quod mazim placerat facer;</li>
-                    <li>Eodem modo typi, qui nunc nobis videntur parum futurum;</li>
-                    <li>Investigationes demonstraverunt lectores</li>
-                </ul>
+                <div class="mobile-devices__wrap">
+                    <h2>Excellent for Mobile Devices.</h2>
+                    <p>Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+                        ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me
+                        lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum
+                        clari, fiant sollemnes in futurum.</p>
+                    <ul>
+                        <li>Nam liber tempor cum soluta nobis eleifend option;</li>
+                        <li>Option congue nihil imperdiet doming id quod mazim placerat facer;</li>
+                        <li>Eodem modo typi, qui nunc nobis videntur parum futurum;</li>
+                        <li>Investigationes demonstraverunt lectores</li>
+                    </ul>
+                </div>
             </section>
             <div class="statistic">
                 <figure>
@@ -526,26 +503,28 @@
                         <span class="month">Sep.</span>
                     </article>
                 </div>
-                <svg xmlns="http://www.w3.org/2000/svg"
-                     xmlns:xlink="http://www.w3.org/1999/xlink"
-                     width="22px" height="22px" viewBox="0 0 22 22">
-                    <path d="M 7.58 10.43C 7.58 10.43 12.35 5.66 12.35 5.66 12.64 5.37 13.11 5.37 13.4 5.66 13.68 5.95
+                <div class="recent-post_arrows">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink"
+                         width="22px" height="22px" viewBox="0 0 22 22">
+                        <path d="M 7.58 10.43C 7.58 10.43 12.35 5.66 12.35 5.66 12.64 5.37 13.11 5.37 13.4 5.66 13.68 5.95
                     13.68 6.42 13.4 6.7 13.4 6.7 9.14 10.96 9.14 10.96 9.14 10.96 13.4 15.21 13.4 15.21 13.68 15.5 13.68
                     15.96 13.4 16.25 13.11 16.54 12.64 16.54 12.35 16.25 12.35 16.25 7.58 11.48 7.58 11.48 7.44 11.33 7.37
                     11.15 7.37 10.96 7.37 10.77 7.44 10.58 7.58 10.43ZM 10.99 0.03C 17.05 0.03 21.97 4.94 21.97 11.01 21.97
                     17.08 17.05 21.99 10.99 21.99 4.92 21.99 0 17.08 0 11.01 0 4.94 4.92 0.03 10.99 0.03ZM 10.99 20.52C 16.23
                     20.52 20.5 16.25 20.5 11.01 20.5 5.77 16.23 1.5 10.99 1.5 5.74 1.5 1.47 5.77 1.47 11.01 1.47 16.25 5.74
                     20.52 10.99 20.52Z" fill="rgb(209,209,209)"/></svg>
-                <svg xmlns="http://www.w3.org/2000/svg"
-                     xmlns:xlink="http://www.w3.org/1999/xlink"
-                     width="22px" height="22px" viewBox="0 0 22 22">
-                    <path d="M 14.42 10.43C 14.42 10.43 9.64 5.66 9.64 5.66 9.36 5.37 8.89 5.37 8.6 5.66 8.32 5.95 8.32
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink"
+                         width="22px" height="22px" viewBox="0 0 22 22">
+                        <path d="M 14.42 10.43C 14.42 10.43 9.64 5.66 9.64 5.66 9.36 5.37 8.89 5.37 8.6 5.66 8.32 5.95 8.32
                     6.42 8.6 6.7 8.6 6.7 12.86 10.96 12.86 10.96 12.86 10.96 8.6 15.21 8.6 15.21 8.32 15.5 8.32 15.96
                     8.6 16.25 8.89 16.54 9.36 16.54 9.64 16.25 9.64 16.25 14.42 11.48 14.42 11.48 14.56 11.33 14.63 11.15
                     14.63 10.96 14.63 10.77 14.56 10.58 14.42 10.43ZM 11.01 0.03C 4.95 0.03 0.03 4.94 0.03 11.01 0.03 17.08
                     4.95 21.99 11.01 21.99 17.08 21.99 22 17.08 22 11.01 22 4.94 17.08 0.03 11.01 0.03ZM 11.01 20.52C 5.77
                     20.52 1.5 16.25 1.5 11.01 1.5 5.77 5.77 1.5 11.01 1.5 16.26 1.5 20.52 5.77 20.52 11.01 20.52 16.25
                     16.26 20.52 11.01 20.52Z" fill="rgb(199,178,153)"/></svg>
+                </div>
             </section>
             <div class="brands">
                     <a href="#"><img src="img/brands_logo-01.png" alt="brands_logo-01"></a>
@@ -627,8 +606,7 @@
             </div>
         </footer>
     </div>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="slick/slick.min.js"></script>
-    <script src="js/js.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
